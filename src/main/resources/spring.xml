@@ -4,7 +4,11 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="programer" class="com.sameer.sameer.Programer">
+    <bean id="programer" class="com.sameer.sameer.Programer" scope="prototype">
+        <property name="age" value="21"></property>
+    </bean>
+
+    <bean id="laptop" class="com.sameer.sameer.Laptop" scope="singleton">
     </bean>
 
 </beans>
