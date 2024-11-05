@@ -10,6 +10,6 @@ public class Laptop {
         this.count = count;
     }
     public Laptop(){
-        System.out.println("Laptop Object created");
+        
     }
 }
