@@ -1,11 +1,24 @@
 package com.sameer.sameer;
 
 public class Programer {
+    
     private int age;
+    private Laptop lap;
 
+
+    public Laptop getLap() {
+        return lap;
+    }
+    public void setLap(Laptop lap) {
+        this.lap = lap;
+    }
+    
+    
     public Programer(){
 
     }
+
+
     public int getAge() {
         return age;
     }
@@ -17,6 +30,7 @@ public class Programer {
 
     public void code(){
         System.out.println("Coding");
+        lap.comiple();
     }
 
 }

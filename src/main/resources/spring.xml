@@ -6,6 +6,7 @@
 
     <bean id="programer" class="com.sameer.sameer.Programer" scope="prototype">
         <property name="age" value="21"></property>
+        <property name="lap" ref="laptop"></property>
     </bean>
 
     <bean id="laptop" class="com.sameer.sameer.Laptop" scope="singleton">
