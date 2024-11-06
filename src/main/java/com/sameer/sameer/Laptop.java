@@ -1,6 +1,6 @@
 package com.sameer.sameer;
 
-public class Laptop {
+public class Laptop implements Computer{
 
     private int count;
 
@@ -14,9 +14,10 @@ public class Laptop {
         this.count = count;
     }
 
-
-    public void comiple(){
-     System.out.println("Compiling");   
+  
+    @Override
+    public void compile() {
+        System.out.println("Compiling from Laptop");
     }
 
     

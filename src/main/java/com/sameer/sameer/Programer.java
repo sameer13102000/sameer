@@ -3,19 +3,20 @@ package com.sameer.sameer;
 public class Programer {
     
     private int age;
-    private Laptop lap;
+    private Computer com;
 
 
-    public Laptop getLap() {
-        return lap;
+    public Computer getLap() {
+        return com;
     }
-    public void setLap(Laptop lap) {
-        this.lap = lap;
+    public void setLap(Computer lap) {
+        this.com = lap;
     }
     
-    
-    public Programer(){
-
+    // Contructor Injection
+    public Programer(int age, Computer lap){
+        this.age = age;
+        this.com = lap;
     }
 
 
@@ -30,7 +31,7 @@ public class Programer {
 
     public void code(){
         System.out.println("Coding");
-        lap.comiple();
+        com.compile();
     }
 
 }
