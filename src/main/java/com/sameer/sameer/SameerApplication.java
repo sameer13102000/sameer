@@ -10,13 +10,13 @@ public class SameerApplication {
 
 	public static void main(String[] args) {
 		// SpringApplication.run(SameerApplication.class, args);
-
 		// Programer pgm = new Programer();
 		// pgm.code();
+
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		Programer pgm = (Programer) context.getBean("programer");
 		pgm.code();
-		System.out.println(pgm.getAge());
+		System.out.println("age "+pgm.getAge());
 	}
 
 }

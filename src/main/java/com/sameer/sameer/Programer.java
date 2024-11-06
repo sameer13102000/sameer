@@ -1,11 +1,25 @@
 package com.sameer.sameer;
 
 public class Programer {
+    
     private int age;
+    private Computer com;
 
-    public Programer(){
 
+    public Computer getLap() {
+        return com;
     }
+    public void setLap(Computer lap) {
+        this.com = lap;
+    }
+    
+    // Contructor Injection
+    public Programer(int age, Computer lap){
+        this.age = age;
+        this.com = lap;
+    }
+
+
     public int getAge() {
         return age;
     }
@@ -17,6 +31,7 @@ public class Programer {
 
     public void code(){
         System.out.println("Coding");
+        com.compile();
     }
 
 }
