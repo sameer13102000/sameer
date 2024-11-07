@@ -5,7 +5,7 @@ public class Laptop implements Computer{
     private int count;
 
     public Laptop(){
-        
+        System.out.println("Laptop Object Created");
     }
     public int getCount() {
         return count;

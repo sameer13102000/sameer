@@ -5,19 +5,9 @@ public class Programer {
     private int age;
     private Computer com;
 
-
-    // public Computer getLap() {
-    //     return com;
-    // }
-    // public void setLap(Computer lap) {
-    //     this.com = lap;
-    // }
-    
-    // Contructor Injection
-    // public Programer(int age, Computer com){
-    //     this.age = age;
-    //     this.com = com;
-    // }
+    public Programer(){
+        System.out.println("Programer Object created");
+    }
 
 
     public Computer getCom() {
