@@ -15,8 +15,9 @@ public class SameerApplication {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		Programer pgm = (Programer) context.getBean("programer");
-		pgm.code();
 		System.out.println("age "+pgm.getAge());
+		pgm.code();
+		
 	}
 
 }

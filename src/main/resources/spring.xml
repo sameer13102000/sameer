@@ -4,18 +4,22 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="programer" class="com.sameer.sameer.Programer" scope="singleton">
-        <!-- <property name="age" value="21"></property>
-        <property name="lap" ref="laptop"></property> -->
-        <constructor-arg index="0" value="21"/>
-        <!-- <constructor-arg index="1" ref="laptop"/> -->
-        <constructor-arg index="1" ref="desk"/>
+    <bean id="programer" class="com.sameer.sameer.Programer" autowire="byType" scope="singleton">
+
+        <property name="age" value="21"></property>
+        <!-- <property name="com" ref="com"></property> -->
+        <!-- <constructor-arg index="0" value="21"/>
+        <constructor-arg index="1" ref="com"/>
+        <constructor-arg index="1" ref="com2"/> -->
+
     </bean>
 
-    <bean id="laptop" class="com.sameer.sameer.Laptop" scope="singleton">
+
+
+    <bean id="com" class="com.sameer.sameer.Laptop" scope="singleton">
     </bean>
 
-    <bean id="desk" class="com.sameer.sameer.Desktop" scope="singleton">
+    <bean id="com2" class="com.sameer.sameer.Desktop" primary="true" scope="singleton">
     </bean>
 
 </beans>
