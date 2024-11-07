@@ -17,11 +17,17 @@ public class SameerApplication {
 		//Laptop lap = context.getBean("Rocky", Laptop.class); -> By default the name of the method in the Bean config class for desktop
 		// is taken as Bean name getLaptopBean in this case. If you want to explictly call by another name above is the code for Bean by name.
 		
-		Laptop lap = context.getBean("getLaptopBean", Laptop.class);
-		lap.compile();
+		// Laptop lap = context.getBean("getLaptopBean", Laptop.class);
+		// lap.compile();
 
-		Laptop lap1 = context.getBean("getLaptopBean", Laptop.class);
-		lap1.compile();
+		// Laptop lap1 = context.getBean("getLaptopBean", Laptop.class);
+		// lap1.compile();
+
+
+		Programer pgm = context.getBean(Programer.class);
+		System.out.println("age: "+pgm.getAge());
+		pgm.code();
+
 		
 	}
 
