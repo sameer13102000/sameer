@@ -1,5 +1,8 @@
 package com.sameer.sameer;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Laptop implements Computer{
 
     private int count;
