@@ -3,6 +3,7 @@ package com.sameer.sameer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -22,7 +23,7 @@ public class Programer {
     }
 
     @Autowired
-    @Qualifier("laptop")
+    @Qualifier("desktop") // -> Has high priority than @Primary. @Primary is given to Laptop class but @Qualifer has high priorty.
     public void setCom(Computer com) {
         this.com = com;
     }
